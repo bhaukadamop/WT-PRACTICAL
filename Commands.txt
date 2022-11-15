@@ -1,27 +1,48 @@
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit
-$ git init
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\SWLAB\Desktop\shrinadgit> git --version
+git version 2.38.1.windows.1
+PS C:\Users\SWLAB\Desktop\shrinadgit> git init
 Initialized empty Git repository in C:/Users/SWLAB/Desktop/shrinadgit/.git/
+PS C:\Users\SWLAB\Desktop\shrinadgit> git status
+On branch master
 
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ git add .
+No commits yet
 
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ git remote add origin https://github.com/bhaukadamop/WT-PRACTICAL.git~
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   CODE.txt
+        new file:   Commands.txt
+        new file:   abc
 
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ git commit -m "first commit"
-[master (root-commit) ba917d1] first commit
- 1 file changed, 1 insertion(+)
+PS C:\Users\SWLAB\Desktop\shrinadgit> git remote add origin "https://github.com/bhaukadamop/WT-PRACTICAL.git"
+PS C:\Users\SWLAB\Desktop\shrinadgit> git commit -m "hello universe"
+[master (root-commit) 09a12fb] hello universe
+ 3 files changed, 34 insertions(+)
  create mode 100644 CODE.txt
-
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ git push -u origin main
+ create mode 100644 Commands.txt
+ create mode 100644 abc
+PS C:\Users\SWLAB\Desktop\shrinadgit> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\SWLAB\Desktop\shrinadgit> git push -u origin main
 error: src refspec main does not match any
-error: failed to push some refs to 'https://github.com/bhaukadamop/WT-PRACTICAL.git~'
-
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ git push -u origin master
-fatal: unable to access 'https://github.com/bhaukadamop/WT-PRACTICAL.git~/': The requested URL returned error: 400
-
-SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
-$ 
+error: failed to push some refs to 'https://github.com/bhaukadamop/WT-PRACTICAL.git'
+PS C:\Users\SWLAB\Desktop\shrinadgit> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 800 bytes | 266.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bhaukadamop/WT-PRACTICAL.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\SWLAB\Desktop\shrinadgit> git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\SWLAB\Desktop\shrinadgit>
