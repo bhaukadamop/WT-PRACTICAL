@@ -1,0 +1,27 @@
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit
+$ git init
+Initialized empty Git repository in C:/Users/SWLAB/Desktop/shrinadgit/.git/
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ git add .
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ git remote add origin https://github.com/bhaukadamop/WT-PRACTICAL.git~
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ git commit -m "first commit"
+[master (root-commit) ba917d1] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 CODE.txt
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/bhaukadamop/WT-PRACTICAL.git~'
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/bhaukadamop/WT-PRACTICAL.git~/': The requested URL returned error: 400
+
+SWLAB@A264 MINGW64 ~/Desktop/shrinadgit (master)
+$ 
